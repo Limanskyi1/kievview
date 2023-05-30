@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/rooms-view.css">
+    <link rel="stylesheet" href="css/apartment-view.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/roooms-view-media.css">
+    <link rel="stylesheet" href="css/apartment-view-media.css">
+    <link rel="icon" type="image/png" href="img/Favicon.png">
+    <title>Kyiv View Hotel</title>
+</head>
+<body>
+    <header class="header" id="myHeader">
+        <div class="header__header container">
+            <div class="header__logo">
+                <a href="index.html"><img src="img/logo.svg" alt="" class="header__logo__link"></a>
+            </div>
+            <nav class="header__items">
+                <select class="change-lang">
+                    <option value="ua">UA</option>
+                    <option value="en" selected>EN</option>
+                </select>
+                <div class="header__items__number">
+                    <img src="img/phone.svg" alt="">
+                    <p><a href="tel:+380638776138">+38 063 877 6138</a></p>
+                </div>
+                <div class="header__items__burger">
+                    <span class="bar-top"></span>
+                    <span class="bar-mid"></span>
+                    <span class="bar-bot"></span>
+                </div>
+                <ul class="header__items__menu">
+                    <li><span>01</span><a href="index.html" class="header__items__menu__link__video lng-mainpage">Головна</a></li>
+                    <span class="dots"></span>
+					<li><span>02</span><a href="rooms-view.html" class="lng-rooms">Номери</a></li>
+                    <span class="dots"></span>
+					<li><span>03</span><a href="apartment-view.html" class="lng-appartments">Апартаменти</a></li>
+                    <span class="dots"></span>
+					<li><span>04</span><a href="index.html#rewiew" class="header__items__menu__link__rewiews lng-rewiews">Відгуки</a></li>
+                    <span class="dots"></span>
+					<li><span>05</span><a href="index.html#contacts" class="header__items__menu__link__contacts lng-contacts">Контакти</a></li>
+					<div class="eclipse"></div>
+                </ul>
+            </nav>
+        </div>
+        <div class="logo__animation">
+            <img src="img/logobig1.svg" alt="" class="header__items__menu__logo">
+        </div>
+    </header>
+    <main>
+        <section class="main-block main-block__apartment">
+            <div class="main-block__section container ">
+                <div class="main-block__navigation">
+                  <a href="index.html"><p class="lng-back__main">Назад на головну</p></a>
+                    <a href="index.html">  <div class="swiper-button-next"><svg class="swiper-button-next__svg back" viewBox="0 0 86 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.381 6.645a.875.875 0 0 0 0 1.238L5.95 13.45a.875.875 0 1 0 1.237-1.237l-4.95-4.95 4.95-4.95A.875.875 0 0 0 5.95 1.077L.38 6.645ZM86 6.39H1v1.75h85V6.39Z"/></svg></div></a>
+                </div>
+                <h1 class="main-block__title">KYIV VIEW HOTEL & APARTMENTS</h1>
+                <p class="main-block__text lng-apartments__look">Розширений огляд апартаментів</p>
+                <div class="main-block__buttons">
+                  <a href="rooms-view.html">
+                    <button class="main-block__button1">
+                      <svg class="main-block__button1__svg main-block__button1__svg__change" viewBox="0 0 181 53" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="train__svg__item" d="m174.233 25.273-.106.215.101.218 6.187 13.3v12.789h-179V39.033l7.721-12.881.154-.257-.154-.257-7.721-12.882V.796h179v11.983l-6.182 12.495Z"stroke="#F2F4F6"/></svg>
+                      <span class="main-block__button1__span lng-numbers main-block__button1__svg__change__text">Номери</span>
+                    </button>
+                  </a>
+                        <button class="main-block__button2">
+                            <svg class="main-block__button2__svg main-block__button2__svg__change" viewBox="0 0 181 53" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="train__svg__item" d="m174.233 25.273-.106.215.101.218 6.187 13.3v12.789h-179V39.033l7.721-12.881.154-.257-.154-.257-7.721-12.882V.796h179v11.983l-6.182 12.495Z"stroke="#F2F4F6"/></svg>
+                            <span class="main-block__button2__span lng-apartament main-block__button2__svg__change__text">Апартаменти</span>
+                          </button>
+                </div>
+            </div>
+        </section>
+        <div class="main">
+            <div class="main__wrapper container">
+              <section class="roomlook" id="apartment1">
+                <div class="roomlook__head">
+                    <h2 class="roomlook__title roomlook__title__apart4 lng-impr__kitchen">«Покращені апартаменти
+                      з кухнею»</h2>
+                        <btn class="rz-body popup-button" data-video-id="video7">
+                            <span class="lng-video__look">Відео-огляд </span><span class="rz-triangle"></span>
+                        </btn>
+                </div>
+                <div class="roomlook__block">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <picture class="swiper-slide">
+                              <source type="image/avif" srcset="img/apart_improve_kitchen_1.avif">
+                              <source type="image/webp" srcset="img/apart_improve_kitchen_1.webp">
+                              <img src="img/apart_improve_kitchen_1.jpg" alt="">
+                            </picture>
+                            <picture class="swiper-slide">
+                              <source type="image/avif" srcset="img/apart_improve_kitchen_2.avif">
+                              <source type="image/webp" srcset="img/apart_improve_kitchen_2.webp">
+                              <img src="img/apart_improve_kitchen_2.jpg" alt="">
+                            </picture>
+                            <picture class="swiper-slide">
+                              <source type="image/avif" srcset="img/apart_improve_kitchen_3.avif">
+                              <source type="image/webp" srcset="img/apart_improve_kitchen_3.webp">
+                              <img src="img/apart_improve_kitchen_3.jpg" alt="">
+                            </picture>
+                            <picture class="swiper-slide">
+                              <source type="image/avif" srcset="img/apart_improve_kitchen_4.avif">
+                              <source type="image/webp" srcset="img/apart_improve_kitchen_4.webp">
+                              <img src="img/apart_improve_kitchen_4.jpg" alt="">
+                            </picture>
+                            <picture class="swiper-slide">
+                              <source type="image/avif" srcset="img/apart_improve_kitchen_5.avif">
+                              <source type="image/webp" srcset="img/apart_improve_kitchen_5.webp">
+                              <img src="img/apart_improve_kitchen_5.jpg" alt="">
+                            </picture>
+                        </div>
+                        
+                        <div class="swiper__buttons swiper__buttons__adaptive swiper__buttons__adaptive__fix2">
+                          <div class="swiper-button-next"><svg class="swiper-button-next__svg" viewBox="0 0 86 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.381 6.645a.875.875 0 0 0 0 1.238L5.95 13.45a.875.875 0 1 0 1.237-1.237l-4.95-4.95 4.95-4.95A.875.875 0 0 0 5.95 1.077L.38 6.645ZM86 6.39H1v1.75h85V6.39Z"/></svg></div>
+                          <div class="swiper-pagination"></div>
+                          <div class="swiper-button-prev"><svg class="swiper-button-prev__svg" viewBox="0 0 86 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.381 6.645a.875.875 0 0 0 0 1.238L5.95 13.45a.875.875 0 1 0 1.237-1.237l-4.95-4.95 4.95-4.95A.875.875 0 0 0 5.95 1.077L.38 6.645ZM86 6.39H1v1.75h85V6.39Z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="roomlook__block__info">
+                            <btn class="rz-body popup-button rz-body__adaptive" data-video-id="video7">
+                                <span class="lng-video__look">Відео-огляд </span><span class="rz-triangle"></span>
+                            </btn>
+                        <div class="roomlook__block__info__item">
+                            <img src="img/item1.svg" alt="size of room">
+                            <p class="lng-size20__text"><span class="medim">Розмір номера:</span> 20м²</p>
+                        </div>
+                        <div class="roomlook__block__info__item">
+                            <p class="bold lng-bedroom">Спальня:</p>
+                        </div>
+                        <div class="roomlook__block__info__item2 roomlook__block__info__item__long roomlook__block__info__item2__adaptive">
+                          <div class="roomlook__block__info__item">
+                            <img src="img/item2.svg" alt="bed">
+                            <p class="lng-doublebed">1 двоспальне ліжко</p>
+                        </div>
+                      
+                        </div>
+                        <div class="roomlook__block__info__item2 roomlook__block__info__item2__fix">
+                            <div class="roomlook__block__info__item">
+                                <p class="bold lng-living__room">Вітальня:</p>
+                            </div>
+                            <div class="roomlook__block__info__item">
+                                <img src="img/welcome-room.svg" alt="bed">
+                                <p class="lng-sofa">1 диван-ліжко</p>
+                            </div>
+                        </div>
+                        <div class="roomlook__block__info__item">
+                            <p class="lng-amenities open-popup-list">Зручності</p>
+                            <img src="img/item3.svg" alt="" class="open-popup-list aroow-grow">
+                        </div>
+                        <div class="roomlook__block__info__item3 roomlook__block__info__item3__adaptive roomlook__block__info__item3__fix">
+                            <!-- <div class="roomlook__block__info__item">
+                                <img src="img/item4.svg" alt="bed">
+                                <p class="lng-monument">Вид на пам'ятку</p>
+                            </div> -->
+                            <div class="roomlook__block__info__item">
+                                <img src="img/kitchen.svg" alt="bed">
+                                <p class="lng-kitchen">Власна кухня</p>
+                            </div>
+                        </div>
+                        <div class="roomlook__block__info__item2">
+                            <div class="roomlook__block__info__item">
+                                <img src="img/item6.svg" alt="bed">
+                                <p class="lng-view__city">Вид на місто</p>
+                            </div>
+                            <div class="roomlook__block__info__item">
+                                <img src="img/bathroom.svg" alt="bed">
+                                <p class="lng-bathroom">Ванна кімната в номері</p>
+                            </div>
+                        </div>
+                        <div class="roomlook__block__info__item2">
+                            <div class="roomlook__block__info__item">
+                                <img src="img/item8.svg" alt="bed">
+                                <p class="lng-tv">Телевізор з плоским екраном</p>
+                            </div>
+                            <div class="roomlook__block__info__item">
+                                <img src="img/item9.svg" alt="bed">
+                                <p class="lng-mini__bar">Міні-бар</p>
+                            </div>
+                        </div>
+                        <div class="roomlook__block__info__item2">
+                            <div class="roomlook__block__info__item">
+                                <img src="img/item10.svg" alt="">
+                                <p class="lng-wifi">Безкоштовний Wi-Fi</p>
+                            </div>
+                            <div class="roomlook__block__info__item">
+                                <img src="img/item5.svg" alt="bed">
+                                <p class="lng-condition">Кондиціонер</p>
+                            </div>
+                        </div>
+                        <div class="roomlook__block__buttons">
+                            <div class="roomlook__block__button1">
+                                <svg viewBox="0 0 180 53" fill="none" color="red" xmlns="http://www.w3.org/2000/svg" class="roomlook__block__button1__svg">
+                                  <path d="M173.318 25.2424L173.212 25.4575L173.313 25.6751L179.5 38.9748V51.7642H0.5V39.0025L8.22107 26.1212L8.37515 25.8642L8.22107 25.6071L0.5 12.7258V0.76416H179.5V12.7472L173.318 25.2424Z" stroke="#D1D1D1"/>
+                                  </svg>
+                                  <p class="roomlook__block__button1__text lng-price__40">від<span>40$</span>/ніч</p>
+                              </div>
+                              <button class="roomlook__block__button2 open-popup">
+                                <svg class="roomlook__block__button2__svg" viewBox="0 0 181 53" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="train__svg__item" d="m174.233 25.273-.106.215.101.218 6.187 13.3v12.789h-179V39.033l7.721-12.881.154-.257-.154-.257-7.721-12.882V.796h179v11.983l-6.182 12.495Z"stroke="#F2F4F6"/></svg>
+                                <span class="roomlook__block__button2__span lng-book">Забронювати</span>
+                              </button>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+                <section class="roomlook" id="apartment2">
+                    <div class="roomlook__head">
+                        <h2 class="roomlook__title lng-studio">«Апартаменти-студіо»</h2>
+                            <btn class="rz-body rz-body__delete">
+                                <span class="lng-video__look">Відео-огляд </span><span class="rz-triangle"></span>
+                            </btn>
+
+                    </div>
+                    <div class="roomlook__block">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <picture class="swiper-slide">
+                                  <source type="image/avif" srcset="img/apartment_studio_1.avif">
+                                  <source type="image/webp" srcset="img/apartment_studio_1.webp">
+                                  <img src="img/apartment_studio_1.jpg" alt="">
+                                </picture>
+                                <picture class="swiper-slide">
+                                  <source type="image/avif" srcset="img/apartment_studio_2.avif">
+                                  <source type="image/webp" srcset="img/apartment_studio_2.webp">
+                                  <img src="img/apartment_studio_2.jpg" alt="">
+                                </picture>
+                                <picture class="swiper-slide">
+                                  <source type="image/avif" srcset="img/apartment_studio_3.avif">
+                                  <source type="image/webp" srcset="img/apartment_studio_3.webp">
+                                  <img src="img/apartment_studio_3.jpg" alt="">
+                                </picture>
+                                <picture class="swiper-slide">
+                                  <source type="image/avif" srcset="img/apartment_studio_4.avif">
+                                  <source type="image/webp" srcset="img/apartment_studio_4.webp">
+                                  <img src="img/apartment_studio_4.jpg" alt="">
+                                </picture>
+                                <picture class="swiper-slide">
+                                  <source type="image/avif" srcset="img/apartment_studio_5.avif">
+                                  <source type="image/webp" srcset="img/apartment_studio_5.webp">
+                                  <img src="img/apartment_studio_5.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="swiper__buttons swiper__buttons__adaptive3">
+                              <div class="swiper-button-next"><svg class="swiper-button-next__svg" viewBox="0 0 86 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.381 6.645a.875.875 0 0 0 0 1.238L5.95 13.45a.875.875 0 1 0 1.237-1.237l-4.95-4.95 4.95-4.95A.875.875 0 0 0 5.95 1.077L.38 6.645ZM86 6.39H1v1.75h85V6.39Z"/></svg></div>
+                              <div class="swiper-pagination"></div>
+                              <div class="swiper-button-prev"><svg class="swiper-button-prev__svg" viewBox="0 0 86 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.381 6.645a.875.875 0 0 0 0 1.238L5.95 13.45a.875.875 0 1 0 1.237-1.237l-4.95-4.95 4.95-4.95A.875.875 0 0 0 5.95 1.077L.38 6.645ZM86 6.39H1v1.75h85V6.39Z"/></svg></div>
+                            </div>
+                        </div>
+                        <div class="roomlook__block__info">
+                                <btn class="rz-body rz-body__adaptive rz-body__adaptive__delete">
+                                    <span class="lng-video__look">Відео-огляд </span><span class="rz-triangle"></span>
+                                </btn>
+                            <div class="roomlook__block__info__item">
+                                <img src="img/item1.svg" alt="size of room">
+                                <p class="lng-size25__text"><span class="medim">Розмір номера: </span>25 м²</p>
+                            </div>
+                            <div class="roomlook__block__info__item">
+                                <img src="img/item2.svg" alt="bed">
+                                <p class="lng-large_doublebed">1 широке двоспальне ліжко</p>
+                            </div>
+                            <div class="roomlook__block__info__item">
+                                <p class="lng-amenities open-popup-list">Зручності</p>
+                                <img src="img/item3.svg" alt="" class="open-popup-list aroow-grow">
+                            </div>
+                            <div class="roomlook__block__info__item2">
+                                <!-- <div class="roomlook__block__info__item">
+                                    <img src="img/item4.svg" alt="bed">
+                                    <p class="lng-monument">Вид на пам'ятку</p>
+                                </div> -->
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/mini-kitchen.svg" alt="bed">
+                                    <p class="lng-kitchen__mini">Власна міні-кухня</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__info__item2">
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item6.svg" alt="bed">
+                                    <p class="lng-view__city">Вид на місто</p>
+                                </div>
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/bathroom.svg" alt="bed">
+                                    <p class="lng-bathroom">Ванна кімната в номері</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__info__item2">
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item8.svg" alt="bed">
+                                    <p class="lng-tv">Телевізор з плоским екраном</p>
+                                </div>
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item9.svg" alt="bed">
+                                    <p class="lng-mini__bar">Міні-бар</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__info__item2">
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item10.svg" alt="">
+                                    <p class="lng-wifi">Безкоштовний Wi-Fi</p>
+                                </div>
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item5.svg" alt="bed">
+                                    <p class="lng-condition">Кондиціонер</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__buttons">
+                                <div class="roomlook__block__button1">
+                                    <svg viewBox="0 0 180 53" fill="none" color="red" xmlns="http://www.w3.org/2000/svg" class="roomlook__block__button1__svg">
+                                      <path d="M173.318 25.2424L173.212 25.4575L173.313 25.6751L179.5 38.9748V51.7642H0.5V39.0025L8.22107 26.1212L8.37515 25.8642L8.22107 25.6071L0.5 12.7258V0.76416H179.5V12.7472L173.318 25.2424Z" stroke="#D1D1D1"/>
+                                      </svg>
+                                      <p class="roomlook__block__button1__text lng-price__33">від<span>33$</span>/ніч</p>
+                                  </div>
+                                  <button class="roomlook__block__button2 open-popup">
+                                    <svg class="roomlook__block__button2__svg" viewBox="0 0 181 53" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="train__svg__item" d="m174.233 25.273-.106.215.101.218 6.187 13.3v12.789h-179V39.033l7.721-12.881.154-.257-.154-.257-7.721-12.882V.796h179v11.983l-6.182 12.495Z"stroke="#F2F4F6"/></svg>
+                                    <span class="roomlook__block__button2__span lng-book">Забронювати</span>
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                  </section>
+                <section class="roomlook" id="apartment3">
+                    <div class="roomlook__head">
+                        <h2 class="roomlook__title roomlook__title__apart lng-king">«Номер-студіо з ліжком розміру "king-size" та диван-ліжком»</h2>
+                            <btn class="rz-body popup-button" data-video-id="video6">
+                                <span class="lng-video__look">Відео-огляд </span><span class="rz-triangle"></span>
+                            </btn>
+                    </div>
+                    <div class="roomlook__block">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <picture class="swiper-slide">
+                                  <source type="image/avif" srcset="img/king_size_1.avif">
+                                  <source type="image/webp" srcset="img/king_size_1.webp">
+                                  <img src="img/king_size_1.jpg" alt="">
+                                </picture>
+                                <picture class="swiper-slide">
+                                  <source type="image/avif" srcset="img/king_size_2.avif">
+                                  <source type="image/webp" srcset="img/king_size_2.webp">
+                                  <img src="img/king_size_2.jpg" alt="">
+                                </picture>
+                                <picture class="swiper-slide">
+                                  <source type="image/avif" srcset="img/king_size_3.avif">
+                                  <source type="image/webp" srcset="img/king_size_3.webp">
+                                  <img src="img/king_size_3.jpg" alt="">
+                                </picture>
+                                <picture class="swiper-slide">
+                                  <source type="image/avif" srcset="img/king_size_4.avif">
+                                  <source type="image/webp" srcset="img/king_size_4.webp">
+                                  <img src="img/king_size_4.jpg" alt="">
+                                </picture>
+                                <picture class="swiper-slide">
+                                  <source type="image/avif" srcset="img/king_size_5.avif">
+                                  <source type="image/webp" srcset="img/king_size_5.webp">
+                                  <img src="img/king_size_5.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="swiper__buttons swiper__buttons__adaptive1">
+                              <div class="swiper-button-next"><svg class="swiper-button-next__svg" viewBox="0 0 86 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.381 6.645a.875.875 0 0 0 0 1.238L5.95 13.45a.875.875 0 1 0 1.237-1.237l-4.95-4.95 4.95-4.95A.875.875 0 0 0 5.95 1.077L.38 6.645ZM86 6.39H1v1.75h85V6.39Z"/></svg></div>
+                              <div class="swiper-pagination"></div>
+                              <div class="swiper-button-prev"><svg class="swiper-button-prev__svg" viewBox="0 0 86 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.381 6.645a.875.875 0 0 0 0 1.238L5.95 13.45a.875.875 0 1 0 1.237-1.237l-4.95-4.95 4.95-4.95A.875.875 0 0 0 5.95 1.077L.38 6.645ZM86 6.39H1v1.75h85V6.39Z"/></svg></div>
+                            </div>
+                        </div>
+                        <div class="roomlook__block__info">
+                                <btn class="rz-body rz-body__adaptive popup-button" data-video-id="video6">
+                                    <span class="lng-video__look">Відео-огляд </span><span class="rz-triangle"></span>
+                                </btn>
+                            <div class="roomlook__block__info__item">
+                                <img src="img/item1.svg" alt="size of room">
+                                <p class="lng-size35__text"><span class="medim">Розмір номера:</span> 35 м²</p>
+                            </div>
+                            <div class="roomlook__block__info__item2 roomlook__block__info__item__long">
+                                <div class="roomlook__block__info__item ">
+                                    <img src="img/item2.svg" alt="bed">
+                                    <p class="lng-large_doublebed">1 широке двоспальне ліжко</p>
+                                </div>
+                                <span class="fix lng-and">і</span>
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item11.svg" alt="bed">
+                                    <p class="lng-sofa">1 диван-ліжко</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__info__item">
+                                <p class="lng-amenities open-popup-list">Зручності</p>
+                                <img src="img/item3.svg" alt="" class="open-popup-list aroow-grow">
+                            </div>
+                            <div class="roomlook__block__info__item2">
+                                <!-- <div class="roomlook__block__info__item">
+                                    <img src="img/item4.svg" alt="bed">
+                                    <p class="lng-monument">Вид на пам'ятку</p>
+                                </div> -->
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/kitchen.svg" alt="bed">
+                                    <p class="lng-kitchen">Власна кухня</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__info__item2">
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item6.svg" alt="bed">
+                                    <p class="lng-view__city">Вид на місто</p>
+                                </div>
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/bathroom.svg" alt="bed">
+                                    <p class="lng-bathroom">Ванна кімната в номері</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__info__item2">
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item8.svg" alt="bed">
+                                    <p class="lng-tv">Телевізор з плоским екраном</p>
+                                </div>
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item9.svg" alt="bed">
+                                    <p class="lng-mini__bar">Міні-бар</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__info__item2">
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item10.svg" alt="">
+                                    <p class="lng-wifi">Безкоштовний Wi-Fi</p>
+                                </div>
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item5.svg" alt="bed">
+                                    <p class="lng-condition">Кондиціонер</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__buttons">
+                                <div class="roomlook__block__button1">
+                                    <svg viewBox="0 0 180 53" fill="none" color="red" xmlns="http://www.w3.org/2000/svg" class="roomlook__block__button1__svg">
+                                      <path d="M173.318 25.2424L173.212 25.4575L173.313 25.6751L179.5 38.9748V51.7642H0.5V39.0025L8.22107 26.1212L8.37515 25.8642L8.22107 25.6071L0.5 12.7258V0.76416H179.5V12.7472L173.318 25.2424Z" stroke="#D1D1D1"/>
+                                      </svg>
+                                      <p class="roomlook__block__button1__text lng-price__37">від<span>37$</span>/ніч</p>
+                                  </div>
+                                  <button class="roomlook__block__button2 open-popup">
+                                    <svg class="roomlook__block__button2__svg" viewBox="0 0 181 53" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="train__svg__item" d="m174.233 25.273-.106.215.101.218 6.187 13.3v12.789h-179V39.033l7.721-12.881.154-.257-.154-.257-7.721-12.882V.796h179v11.983l-6.182 12.495Z"stroke="#F2F4F6"/></svg>
+                                    <span class="roomlook__block__button2__span lng-book">Забронювати</span>
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+                <section class="roomlook" id="apartment4">
+                    <div class="roomlook__head">
+                        <h2 class="roomlook__title roomlook__title__apart2 lng-studio__kitchen">«Апартаменти студіо з кухнею»</h2>
+                            <btn class="rz-body rz-body__delete">
+                                <span class="lng-video__look">Відео-огляд </span><span class="rz-triangle"></span>
+                            </btn>
+                    </div>
+                    <div class="roomlook__block">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                  <picture class="swiper-slide">
+                                    <source type="image/avif" srcset="img/apart_studio_kitchen_1.avif">
+                                    <source type="image/webp" srcset="img/apart_studio_kitchen_1.webp">
+                                    <img src="img/apart_studio_kitchen_1.jpg" alt="">
+                                  </picture>
+                                  <picture class="swiper-slide">
+                                    <source type="image/avif" srcset="img/apart_studio_kitchen_2.avif">
+                                    <source type="image/webp" srcset="img/apart_studio_kitchen_2.webp">
+                                    <img src="img/apart_studio_kitchen_2.jpg" alt="">
+                                  </picture>
+                                  <picture class="swiper-slide">
+                                    <source type="image/avif" srcset="img/apart_studio_kitchen_3.avif">
+                                    <source type="image/webp" srcset="img/apart_studio_kitchen_3.webp">
+                                    <img src="img/apart_studio_kitchen_3.jpg" alt="">
+                                  </picture>
+                                  <picture class="swiper-slide">
+                                    <source type="image/avif" srcset="img/apart_studio_kitchen_4.avif">
+                                    <source type="image/webp" srcset="img/apart_studio_kitchen_4.webp">
+                                    <img src="img/apart_studio_kitchen_4.jpg" alt="">
+                                  </picture>
+                                  <picture class="swiper-slide">
+                                    <source type="image/avif" srcset="img/apart_studio_kitchen_5.avif">
+                                    <source type="image/webp" srcset="img/apart_studio_kitchen_5.webp">
+                                    <img src="img/apart_studio_kitchen_5.jpg" alt="">
+                                  </picture>
+                            </div>
+                                <!-- <div class="swiper__buttons swiper__buttons__adaptive4"></div> -->
+                            <div class="swiper__buttons swiper__buttons__adaptive4">
+
+                              <div class="swiper-button-next"><svg class="swiper-button-next__svg" viewBox="0 0 86 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.381 6.645a.875.875 0 0 0 0 1.238L5.95 13.45a.875.875 0 1 0 1.237-1.237l-4.95-4.95 4.95-4.95A.875.875 0 0 0 5.95 1.077L.38 6.645ZM86 6.39H1v1.75h85V6.39Z"/></svg></div>
+                              <div class="swiper-pagination"></div>
+                              <div class="swiper-button-prev"><svg class="swiper-button-prev__svg" viewBox="0 0 86 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.381 6.645a.875.875 0 0 0 0 1.238L5.95 13.45a.875.875 0 1 0 1.237-1.237l-4.95-4.95 4.95-4.95A.875.875 0 0 0 5.95 1.077L.38 6.645ZM86 6.39H1v1.75h85V6.39Z"/></svg></div>
+                            </div>
+                        </div>
+                        <div class="roomlook__block__info">
+                                <btn class="rz-body rz-body__adaptive rz-body__adaptive__delete">
+                                    <span class="lng-video__look">Відео-огляд </span><span class="rz-triangle"></span>
+                                </btn>
+                            <div class="roomlook__block__info__item">
+                                <img src="img/item1.svg" alt="size of room">
+                                <p class="lng-size20__text"><span class="medim">Розмір номера:</span> 20м²</p>
+                            </div>
+                            <div class="roomlook__block__info__item ">
+                              <img src="img/item2.svg" alt="bed">
+                              <p class="lng-large_doublebed">1 широке двоспальне ліжко</p>
+                          </div>
+                            <div class="roomlook__block__info__item">
+                                <p class="lng-amenities open-popup-list">Зручності</p>
+                                <img src="img/item3.svg" alt="" class="open-popup-list aroow-grow">
+                            </div>
+                            <div class="roomlook__block__info__item3 roomlook__block__info__item3__adaptive">
+                                <!-- <div class="roomlook__block__info__item">
+                                    <img src="img/item4.svg" alt="bed">
+                                    <p class="lng-monument">Вид на пам'ятку</p>
+                                </div> -->
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/kitchen.svg" alt="bed">
+                                    <p class="lng-kitchen">Власна кухня</p>
+                                </div>
+                                <div class="roomlook__block__info__item sound__delete">
+                                    <img src="img/volume-izolation.svg" alt="bed">
+                                    <p class="lng-sound__insulation">Звукоізоляція</p>
+                                </div>
+                            </div>
+                            
+                            <div class="roomlook__block__info__item2">
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item6.svg" alt="bed">
+                                    <p class="lng-view__city">Вид на місто</p>
+                                </div>
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/bathroom.svg" alt="bed">
+                                    <p class="lng-bathroom">Ванна кімната в номері</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__info__item2">
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item8.svg" alt="bed">
+                                    <p class="lng-tv">Телевізор з плоским екраном</p>
+                                </div>
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item9.svg" alt="bed">
+                                    <p class="lng-mini__bar">Міні-бар</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__info__item2">
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item10.svg" alt="">
+                                    <p class="lng-wifi">Безкоштовний Wi-Fi</p>
+                                </div>
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item5.svg" alt="bed">
+                                    <p class="lng-condition">Кондиціонер</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__info__item sound">
+                                <img src="img/volume-izolation.svg" alt="bed">
+                                <p class="lng-sound__insulation">Звукоізоляція</p>
+                            </div>
+                            <div class="roomlook__block__buttons">
+                                <div class="roomlook__block__button1">
+                                    <svg viewBox="0 0 180 53" fill="none" color="red" xmlns="http://www.w3.org/2000/svg" class="roomlook__block__button1__svg">
+                                      <path d="M173.318 25.2424L173.212 25.4575L173.313 25.6751L179.5 38.9748V51.7642H0.5V39.0025L8.22107 26.1212L8.37515 25.8642L8.22107 25.6071L0.5 12.7258V0.76416H179.5V12.7472L173.318 25.2424Z" stroke="#D1D1D1"/>
+                                      </svg>
+                                      <p class="roomlook__block__button1__text lng-price__30">від<span>30$</span>/ніч</p>
+                                  </div>
+                                  <button class="roomlook__block__button2 open-popup">
+                                    <svg class="roomlook__block__button2__svg" viewBox="0 0 181 53" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="train__svg__item" d="m174.233 25.273-.106.215.101.218 6.187 13.3v12.789h-179V39.033l7.721-12.881.154-.257-.154-.257-7.721-12.882V.796h179v11.983l-6.182 12.495Z"stroke="#F2F4F6"/></svg>
+                                    <span class="roomlook__block__button2__span lng-book">Забронювати</span>
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+                <section class="roomlook" id="apartment5">
+                    <div class="roomlook__head">
+                        <h2 class="roomlook__title roomlook__title__apart3 lng-deluxe">«Апартаменти делюкс з кухнею»</h2>
+                            <btn class="rz-body rz-body__delete">
+                                <span class="lng-video__look">Відео-огляд </span><span class="rz-triangle"></span>
+                            </btn>
+                    </div>
+                    <div class="roomlook__block">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <picture class="swiper-slide">
+                                  <source type="image/avif" srcset="img/apart_deluxe_kitchen_1.avif">
+                                  <source type="image/webp" srcset="img/apart_deluxe_kitchen_1.webp">
+                                  <img src="img/apart_deluxe_kitchen_1.jpg" alt="">
+                                </picture>
+                                <picture class="swiper-slide">
+                                  <source type="image/avif" srcset="img/apart_deluxe_kitchen_2.avif">
+                                  <source type="image/webp" srcset="img/apart_deluxe_kitchen_2.webp">
+                                  <img src="img/apart_deluxe_kitchen_2.jpg" alt="">
+                                </picture>
+                                <picture class="swiper-slide">
+                                  <source type="image/avif" srcset="img/apart_deluxe_kitchen_3.avif">
+                                  <source type="image/webp" srcset="img/apart_deluxe_kitchen_3.webp">
+                                  <img src="img/apart_deluxe_kitchen_3.jpg" alt="">
+                                </picture>
+                                <picture class="swiper-slide">
+                                  <source type="image/avif" srcset="img/apart_deluxe_kitchen_4.avif">
+                                  <source type="image/webp" srcset="img/apart_deluxe_kitchen_4.webp">
+                                  <img src="img/apart_deluxe_kitchen_4.jpg" alt="">
+                                </picture>
+                                <picture class="swiper-slide">
+                                  <source type="image/avif" srcset="img/apart_deluxe_kitchen_5.avif">
+                                  <source type="image/webp" srcset="img/apart_deluxe_kitchen_5.webp">
+                                  <img src="img/apart_deluxe_kitchen_5.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="swiper__buttons swiper__buttons__adaptive2">
+                              <div class="swiper-button-next"><svg class="swiper-button-next__svg" viewBox="0 0 86 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.381 6.645a.875.875 0 0 0 0 1.238L5.95 13.45a.875.875 0 1 0 1.237-1.237l-4.95-4.95 4.95-4.95A.875.875 0 0 0 5.95 1.077L.38 6.645ZM86 6.39H1v1.75h85V6.39Z"/></svg></div>
+                              <div class="swiper-pagination"></div>
+                              <div class="swiper-button-prev"><svg class="swiper-button-prev__svg" viewBox="0 0 86 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.381 6.645a.875.875 0 0 0 0 1.238L5.95 13.45a.875.875 0 1 0 1.237-1.237l-4.95-4.95 4.95-4.95A.875.875 0 0 0 5.95 1.077L.38 6.645ZM86 6.39H1v1.75h85V6.39Z"/></svg></div>
+                            </div>
+                        </div>
+                        <div class="roomlook__block__info">
+                                <btn class="rz-body rz-body__adaptive rz-body__adaptive__delete">
+                                    <span class="lng-video__look">Відео-огляд </span><span class="rz-triangle"></span>
+                                </btn>
+                            <div class="roomlook__block__info__item">
+                                <img src="img/item1.svg" alt="size of room">
+                                <p class="lng-size27__text"><span class="medim">Розмір номера:</span> 27м²</p>
+                            </div>
+                            <div class="roomlook__block__info__item ">
+                              <img src="img/item2.svg" alt="bed">
+                              <p class="lng-large_doublebed">1 широке двоспальне ліжко</p>
+                          </div>
+                            <div class="roomlook__block__info__item">
+                                <p class="lng-amenities open-popup-list">Зручності</p>
+                                <img src="img/item3.svg" alt="" class="open-popup-list aroow-grow">
+                            </div>
+                            <div class="roomlook__block__info__item3 roomlook__block__info__item3__adaptive">
+                                <!-- <div class="roomlook__block__info__item">
+                                    <img src="img/item4.svg" alt="bed">
+                                    <p class="lng-monument">Вид на пам'ятку</p>
+                                </div> -->
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/kitchen.svg" alt="bed">
+                                    <p class="lng-kitchen">Власна кухня</p>
+                                </div>
+                                <div class="roomlook__block__info__item sound__delete">
+                                    <img src="img/volume-izolation.svg" alt="bed">
+                                    <p class="lng-sound__insulation">Звукоізоляція</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__info__item2">
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item6.svg" alt="bed">
+                                    <p class="lng-view__city">Вид на місто</p>
+                                </div>
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/bathroom.svg" alt="bed">
+                                    <p class="lng-bathroom">Ванна кімната в номері</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__info__item2">
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item8.svg" alt="bed">
+                                    <p class="lng-tv">Телевізор з плоским екраном</p>
+                                </div>
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item9.svg" alt="bed">
+                                    <p class="lng-mini__bar">Міні-бар</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__info__item2">
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item10.svg" alt="">
+                                    <p class="lng-wifi">Безкоштовний Wi-Fi</p>
+                                </div>
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item5.svg" alt="bed">
+                                    <p class="lng-condition">Кондиціонер</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__info__item sound">
+                                <img src="img/volume-izolation.svg" alt="bed">
+                                <p class="lng-sound__insulation">Звукоізоляція</p>
+                            </div>
+                            <div class="roomlook__block__buttons">
+                                <div class="roomlook__block__button1">
+                                    <svg viewBox="0 0 180 53" fill="none" color="red" xmlns="http://www.w3.org/2000/svg" class="roomlook__block__button1__svg">
+                                      <path d="M173.318 25.2424L173.212 25.4575L173.313 25.6751L179.5 38.9748V51.7642H0.5V39.0025L8.22107 26.1212L8.37515 25.8642L8.22107 25.6071L0.5 12.7258V0.76416H179.5V12.7472L173.318 25.2424Z" stroke="#D1D1D1"/>
+                                      </svg>
+                                      <p class="roomlook__block__button1__text lng-price__35">від<span>35$</span>/ніч</p>
+                                  </div>
+                                  <button class="roomlook__block__button2 open-popup">
+                                    <svg class="roomlook__block__button2__svg" viewBox="0 0 181 53" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="train__svg__item" d="m174.233 25.273-.106.215.101.218 6.187 13.3v12.789h-179V39.033l7.721-12.881.154-.257-.154-.257-7.721-12.882V.796h179v11.983l-6.182 12.495Z"stroke="#F2F4F6"/></svg>
+                                    <span class="roomlook__block__button2__span lng-book">Забронювати</span>
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+                <section class="roomlook" id="apartment6">
+                    <div class="roomlook__head">
+                        <h2 class="roomlook__title roomlook__title__apart4 lng-panthouse">«Апартаменти в пентхаусі з кухнею»</h2>
+                            <btn class="rz-body popup-button" data-video-id="video7">
+                                <span class="lng-video__look">Відео-огляд </span><span class="rz-triangle"></span>
+                            </btn>
+                    </div>
+                    <div class="roomlook__block">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <picture class="swiper-slide">
+                                  <source type="image/avif" srcset="img/apart_penthouse_kitchen_1.avif">
+                                  <source type="image/webp" srcset="img/apart_penthouse_kitchen_1.webp">
+                                  <img src="img/apart_penthouse_kitchen_1.jpg" alt="">
+                                </picture>
+                                <picture class="swiper-slide">
+                                  <source type="image/avif" srcset="img/apart_penthouse_kitchen_2.avif">
+                                  <source type="image/webp" srcset="img/apart_penthouse_kitchen_2.webp">
+                                  <img src="img/apart_penthouse_kitchen_2.jpg" alt="">
+                                </picture>
+                                <picture class="swiper-slide">
+                                  <source type="image/avif" srcset="img/apart_penthouse_kitchen_3.avif">
+                                  <source type="image/webp" srcset="img/apart_penthouse_kitchen_3.webp">
+                                  <img src="img/apart_penthouse_kitchen_3.jpg" alt="">
+                                </picture>
+                                <picture class="swiper-slide">
+                                  <source type="image/avif" srcset="img/apart_penthouse_kitchen_4.avif">
+                                  <source type="image/webp" srcset="img/apart_penthouse_kitchen_4.webp">
+                                  <img src="img/apart_penthouse_kitchen_4.jpg" alt="">
+                                </picture>
+                                <picture class="swiper-slide">
+                                  <source type="image/avif" srcset="img/apart_penthouse_kitchen_5.avif">
+                                  <source type="image/webp" srcset="img/apart_penthouse_kitchen_5.webp">
+                                  <img src="img/apart_penthouse_kitchen_5.jpg" alt="">
+                                </picture>
+                            </div>
+                            
+                            <div class="swiper__buttons swiper__buttons__adaptive swiper__buttons__adaptive__fix2">
+                              <div class="swiper-button-next"><svg class="swiper-button-next__svg" viewBox="0 0 86 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.381 6.645a.875.875 0 0 0 0 1.238L5.95 13.45a.875.875 0 1 0 1.237-1.237l-4.95-4.95 4.95-4.95A.875.875 0 0 0 5.95 1.077L.38 6.645ZM86 6.39H1v1.75h85V6.39Z"/></svg></div>
+                              <div class="swiper-pagination"></div>
+                              <div class="swiper-button-prev"><svg class="swiper-button-prev__svg" viewBox="0 0 86 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.381 6.645a.875.875 0 0 0 0 1.238L5.95 13.45a.875.875 0 1 0 1.237-1.237l-4.95-4.95 4.95-4.95A.875.875 0 0 0 5.95 1.077L.38 6.645ZM86 6.39H1v1.75h85V6.39Z"/></svg></div>
+                            </div>
+                        </div>
+                        <div class="roomlook__block__info">
+                                <btn class="rz-body popup-button rz-body__adaptive" data-video-id="video7">
+                                    <span class="lng-video__look">Відео-огляд </span><span class="rz-triangle"></span>
+                                </btn>
+                            <div class="roomlook__block__info__item">
+                                <img src="img/item1.svg" alt="size of room">
+                                <p class="lng-size35__text"><span class="medim">Розмір номера:</span> 35м²</p>
+                            </div>
+                            <div class="roomlook__block__info__item">
+                                <p class="bold lng-bedroom">Спальня:</p>
+                            </div>
+                            <div class="roomlook__block__info__item2 roomlook__block__info__item__long roomlook__block__info__item2__adaptive">
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item2.svg" alt="bed">
+                                    <p class="lng-large_doublebed">1 широке двоспальне ліжко</p>
+                                </div>
+                                <span class="fix">і</span>
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item11.svg" alt="bed">
+                                    <p class="lng-sofa">1 диван-ліжко</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__info__item2 roomlook__block__info__item2__fix">
+                                <div class="roomlook__block__info__item">
+                                    <p class="bold lng-living__room">Вітальня:</p>
+                                </div>
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/welcome-room.svg" alt="bed">
+                                    <p class="lng-sofa">1 диван-ліжко</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__info__item">
+                                <p class="lng-amenities open-popup-list">Зручності</p>
+                                <img src="img/item3.svg" alt="" class="open-popup-list aroow-grow">
+                            </div>
+                            <div class="roomlook__block__info__item3 roomlook__block__info__item3__adaptive roomlook__block__info__item3__fix">
+                                <!-- <div class="roomlook__block__info__item">
+                                    <img src="img/item4.svg" alt="bed">
+                                    <p class="lng-monument">Вид на пам'ятку</p>
+                                </div> -->
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/kitchen.svg" alt="bed">
+                                    <p class="lng-kitchen">Власна кухня</p>
+                                </div>
+                                <div class="roomlook__block__info__item sound__delete">
+                                    <img src="img/volume-izolation.svg" alt="bed">
+                                    <p class="lng-sound__insulation">Звукоізоляція</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__info__item2">
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item6.svg" alt="bed">
+                                    <p class="lng-view__city">Вид на місто</p>
+                                </div>
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/bathroom.svg" alt="bed">
+                                    <p class="lng-bathroom">Ванна кімната в номері</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__info__item2">
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item8.svg" alt="bed">
+                                    <p class="lng-tv">Телевізор з плоским екраном</p>
+                                </div>
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item9.svg" alt="bed">
+                                    <p class="lng-mini__bar">Міні-бар</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__info__item2">
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item10.svg" alt="">
+                                    <p class="lng-wifi">Безкоштовний Wi-Fi</p>
+                                </div>
+                                <div class="roomlook__block__info__item">
+                                    <img src="img/item5.svg" alt="bed">
+                                    <p class="lng-condition">Кондиціонер</p>
+                                </div>
+                            </div>
+                            <div class="roomlook__block__info__item sound">
+                                <img src="img/volume-izolation.svg" alt="bed">
+                                <p class="lng-sound__insulation">Звукоізоляція</p>
+                            </div>
+                            <div class="roomlook__block__buttons">
+                                <div class="roomlook__block__button1">
+                                    <svg viewBox="0 0 180 53" fill="none" color="red" xmlns="http://www.w3.org/2000/svg" class="roomlook__block__button1__svg">
+                                      <path d="M173.318 25.2424L173.212 25.4575L173.313 25.6751L179.5 38.9748V51.7642H0.5V39.0025L8.22107 26.1212L8.37515 25.8642L8.22107 25.6071L0.5 12.7258V0.76416H179.5V12.7472L173.318 25.2424Z" stroke="#D1D1D1"/>
+                                      </svg>
+                                      <p class="roomlook__block__button1__text lng-price__40">від<span>40$</span>/ніч</p>
+                                  </div>
+                                  <button class="roomlook__block__button2 open-popup">
+                                    <svg class="roomlook__block__button2__svg" viewBox="0 0 181 53" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="train__svg__item" d="m174.233 25.273-.106.215.101.218 6.187 13.3v12.789h-179V39.033l7.721-12.881.154-.257-.154-.257-7.721-12.882V.796h179v11.983l-6.182 12.495Z"stroke="#F2F4F6"/></svg>
+                                    <span class="roomlook__block__button2__span lng-book">Забронювати</span>
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+                <div class="popup__video">
+                  <div class="popup-content">
+                    <video id="video1" class="video" src="video/double-standart.mp4" controls></video>
+                    <video id="video2" class="video" src="video/double.mp4" controls></video>
+                    <video id="video3" class="video" src="video/superior-double.mp4" controls></video>
+                    <video id="video4" src="video/three-seater-deluxe.mp4" class="video"></video>
+                    <video src="video/Superior Apartment with kitchen.mp4" id="video5" class="video"></video>
+                    <video src="video/Studio with king-size.mp4" id="video6" class="video"></video>
+                    <video src="video/Penthouse apartment with kitchen.mp4" id="video7" class="video"></video>
+                  </div>
+                </div>
+                <div class="btn-up"><img src="img/Arrow 4.svg" alt=""><span class="lng-up">Наверх</span></div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer__footer container">
+            <h2 class="lng-contacts">Контакти</h2>
+            <div class="footer__footer__item">
+                <div class="footer__footer__logo"><a href="index.html"><img src="img/logo.svg" alt=""></a></div>
+                <div class="footer__footer__info">
+                    <a href="legal_doc.html" class="lng-documents" target="_blank">Юридичні документи</a>
+                    <div class="footer__footer__info__block">
+                        <p>Since 2018</p>
+                        <p>2023 © Kyiv view</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__footer__item2">
+                <div class="contacts__section__item__number">
+                    <div class="contacts__section__item__number__icon"><img src="img/contacts.svg" alt=""></div>
+                    <p><span class="span__contacts lng-phone">Телефон адміністрації:</span><a href="tel:+380638776138">+38 063 877 6138</a></p>
+                </div>
+                <div class="contacts__section__item2__location">
+                    <img src="img/mail.svg" alt="">
+                    <div class="contacts__section__item2__location__item">
+                        <div class="contacts__section__item2__location__item__srick lng-email">Пошта:</div>
+                        <div class="contacts__section__item2__location__item__srick"><a href="mailto:kyivview@yahoo.com">kyivview@yahoo.com</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__footer__item3">
+                <div class="contacts__section__item__adress">
+                    <p class="lng-adress">Адреса:</p>
+                    <p><a target="_blank" href="https://goo.gl/maps/jRoC55z2G9nAhMY29" class="lng-adress__link">вулиця Василя Липківського, 16Г, Київ, 02000</a></p>
+                    <div class="footer__footer__author">Made by <a href="https://t.me/ggavrushaa" target="_blank"> Havriil Nikitin</a></div>
+                </div>
+            </div>
+            <div class="footer__footer__author__adaptive">Made by <a href="https://t.me/ggavrushaa" target="_blank"><span> Havriil Nikitin</span></a></div>
+                <div class="footer__footer__item__graphic">
+                    <p class="lng-graphic">Графік</p>
+                    <p class="lng-graphic__time">Заїзд:  з 14:00
+                        Виїзд:  03:00–12:00</p>
+                </div>
+        </div>
+    </footer>
+    <div class="popup__bg">
+        <form class="popup">
+            <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="close-popup">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 28.5938L28.5714 0.468752L30 1.875L1.42857 30L0 28.5938Z" fill="#00303E"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.42858 0L30 28.125L28.5714 29.5313L3.74669e-06 1.40625L1.42858 0Z" fill="#00303E"/>
+                </svg>
+            <h2 class="lng-room__reserve">Забронювати номер</h2>
+            <p class="popup__text lng-popup__text">Залиште номер телефону для бронювання
+                і ми зателефонуємо вам протягом дня</p>
+            <label class="popup__strict__book">
+
+                <input type="tel" name="tel" placeholder="Номер телефону" class="popup__strict__input">
+            </label>
+            <button type="submit">Забронювати
+                <div class="submit__eclipse"></div>
+                <div class="submit__eclipse2"></div>
+            </button>
+            <p class="popup__text2 lng-popup__text2">Натискаючи на кнопку, ви погоджуєтеся з умовами обробки даних і політикою конфіденційності</p>
+        </form>
+    </div>  
+    <div class="popup__bg-list">
+      <div class="popup-list">
+            <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="close-popup-list">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 28.5938L28.5714 0.468752L30 1.875L1.42857 30L0 28.5938Z" fill="#00303E"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.42858 0L30 28.125L28.5714 29.5313L3.74669e-06 1.40625L1.42858 0Z" fill="#00303E"/>
+                </svg>
+            <h2 class="popup-list__main__title lng-hotel_facilities">Зручності у готелі Kyiv View Railway Station</h2>
+          <div class="popup-list__firstblock">
+            <div class="popup-list__strict">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.25 18.75a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0zm1.5 0a3.75 3.75 0 1 0-7.5 0 3.75 3.75 0 0 0 7.5 0zm2.08-5.833a8.25 8.25 0 0 0-11.666 0 .75.75 0 0 0 1.06 1.06 6.75 6.75 0 0 1 9.546 0 .75.75 0 0 0 1.06-1.06zm3.185-3.182c-4.979-4.98-13.051-4.98-18.03 0a.75.75 0 1 0 1.06 1.06c4.394-4.393 11.516-4.393 15.91 0a.75.75 0 1 0 1.06-1.06zm2.746-3.603C17.136-.043 6.864-.043.24 6.132A.75.75 0 1 0 1.26 7.23c6.05-5.638 15.429-5.638 21.478 0a.75.75 0 0 0 1.022-1.098z"></path></svg>
+              <p class="lng-free_wifi">Безкоштовний Wi-Fi</p>
+            </div>
+            <div class="popup-list__strict">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.5 12c0 5.799-4.701 10.5-10.5 10.5S1.5 17.799 1.5 12 6.201 1.5 12 1.5 22.5 6.201 22.5 12zm1.5 0c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12zm-9.75-1.5a1.5 1.5 0 0 1-1.5 1.5H10.5l.75.75v-4.5L10.5 9h2.25a1.5 1.5 0 0 1 1.5 1.5zm1.5 0a3 3 0 0 0-3-3H10.5a.75.75 0 0 0-.75.75v4.5c0 .414.336.75.75.75h2.25a3 3 0 0 0 3-3zm-4.5 6.75v-4.5a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0z"></path></svg>
+              <p class="lng-parking">Автостоянка</p>
+            </div>
+            <div class="popup-list__strict">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M108.42 55.84H44.26a9 9 0 0 0-8.94 8.94v20.67H19.58a9 9 0 0 0-8.93 8.94v14.8a9 9 0 0 0 8.93 8.94h6.47c2.2 7.332 9.928 11.491 17.26 9.291a13.861 13.861 0 0 0 9.29-9.291h22.8c2.2 7.332 9.928 11.491 17.26 9.291a13.861 13.861 0 0 0 9.29-9.291h1.53c7.658-.006 13.864-6.212 13.87-13.87V64.78a9 9 0 0 0-8.93-8.94zm.93 8.94v20.67H92.68V63.84h15.74a.94.94 0 0 1 .93.94zM68 85.45V63.84h16.68v21.61zM44.26 63.84H60v21.61H43.32V64.78c0-.52.42-.94.94-.94zM39.32 120a5.87 5.87 0 1 1 5.87-5.87 5.88 5.88 0 0 1-5.87 5.87zm49.36 0a5.87 5.87 0 1 1 5.87-5.87 5.87 5.87 0 0 1-5.87 5.87zm14.8-9.87H102c-2.2-7.332-9.928-11.491-17.26-9.291a13.861 13.861 0 0 0-9.29 9.291H52.6c-2.2-7.332-9.928-11.491-17.26-9.291a13.861 13.861 0 0 0-9.29 9.291h-6.47a.94.94 0 0 1-.93-.94v-14.8a.94.94 0 0 1 .93-.94h89.77v10.81a5.87 5.87 0 0 1-5.87 5.87zm-92.29-82a4 4 0 0 1 5.467-1.451l.003.001 6.69 3.88 12.33-6-13.79-8a4 4 0 0 1 4-6.91l18.4 10.73 13.07-6.4a4.003 4.003 0 1 1 3.52 7.19l-36 17.6a4 4 0 0 1-3.76-.13l-8.54-5a4 4 0 0 1-1.39-5.52z"></path></svg>
+              <p class="lng-airport_transfer">Трансфер з/до аеропорту</p>
+            </div>
+            <div class="popup-list__strict">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.75 5.25a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0zm1.5 0a3.75 3.75 0 1 0-7.5 0 3.75 3.75 0 0 0 7.5 0zm-6.182 15.093l.188 1.5A.75.75 0 0 0 18 22.5h3a.75.75 0 0 0 .744-.657l.75-6-.744.657h1.5a.75.75 0 0 0 .75-.75V13.5a4.5 4.5 0 0 0-7.2-3.6.75.75 0 1 0 .9 1.2 3 3 0 0 1 4.8 2.4v2.25l.75-.75h-1.5a.75.75 0 0 0-.744.657l-.75 6L21 21h-3l.744.657-.188-1.5a.75.75 0 0 0-1.488.186zM6.75 5.25a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0zm1.5 0a3.75 3.75 0 1 0-7.5 0 3.75 3.75 0 0 0 7.5 0zM5.444 20.157l-.188 1.5L6 21H3l.744.657-.75-6A.75.75 0 0 0 2.25 15H.75l.75.75V13.5a3 3 0 0 1 4.8-2.4.75.75 0 1 0 .9-1.2A4.5 4.5 0 0 0 0 13.5v2.25c0 .414.336.75.75.75h1.5l-.744-.657.75 6A.75.75 0 0 0 3 22.5h3a.75.75 0 0 0 .744-.657l.188-1.5a.75.75 0 0 0-1.488-.186zM13.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM15 9a3 3 0 1 0-6 0 3 3 0 0 0 6 0zm-3 3a4.5 4.5 0 0 0-4.5 4.5v.75c0 .414.336.75.75.75h1.5l-.74-.627.75 4.5a.75.75 0 0 0 .74.627H12a.75.75 0 0 0 0-1.5h-1.5l.74.627-.75-4.5a.75.75 0 0 0-.74-.627h-1.5l.75.75v-.75a3 3 0 0 1 3-3 .75.75 0 0 0 0-1.5zm0 1.5a3 3 0 0 1 3 3v.75l.75-.75h-1.5a.75.75 0 0 0-.74.627l-.75 4.5.74-.627H12a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 .74-.627l.75-4.5-.74.627h1.5a.75.75 0 0 0 .75-.75v-.75A4.5 4.5 0 0 0 12 12a.75.75 0 0 0 0 1.5z"></path></svg>
+              <p class="lng-family_rooms">Сімейні номери</p>
+            </div>
+            <div class="popup-list__strict">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 9h2.25a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-.75.75h-7.5a.75.75 0 0 0 0 1.5h7.5A2.25 2.25 0 0 0 24 12.75v-3a2.25 2.25 0 0 0-2.25-2.25H19.5a.75.75 0 0 0 0 1.5zM5.25 13.5h-1.5l.75.75v-6L3.75 9h7.5a.75.75 0 0 0 0-1.5h-7.5a.75.75 0 0 0-.75.75v6c0 .414.336.75.75.75h1.5a.75.75 0 0 0 0-1.5zM15 12v2.25a.75.75 0 0 0 1.5 0V12a.75.75 0 0 0-1.5 0zM0 8.25v6a.75.75 0 0 0 1.5 0v-6a.75.75 0 0 0-1.5 0zm1.28 15.53l22.5-22.5A.75.75 0 0 0 22.72.22L.22 22.72a.75.75 0 1 0 1.06 1.06zM4.5.75A2.25 2.25 0 0 1 2.25 3 2.25 2.25 0 0 0 0 5.25a.75.75 0 0 0 1.5 0 .75.75 0 0 1 .75-.75A3.75 3.75 0 0 0 6 .75a.75.75 0 0 0-1.5 0z"></path></svg>
+              <p class="lng-non_smoking_rooms">Номери для некурців</p>
+            </div>
+            <div class="popup-list__strict">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.244 14.156a6.75 6.75 0 0 0-6.75-5.906A6.747 6.747 0 0 0 .73 14.397a.75.75 0 0 0 1.494.134 5.25 5.25 0 0 1 5.27-4.781 5.253 5.253 0 0 1 5.262 4.594.75.75 0 1 0 1.488-.188zM10.125 4.125a2.625 2.625 0 1 1-5.25 0V1.5h5.25v2.625zm1.5 0V1.5a1.5 1.5 0 0 0-1.5-1.5h-5.25a1.5 1.5 0 0 0-1.5 1.5v2.625a4.125 4.125 0 0 0 8.25 0zM23.25 22.5H.75l.75.75v-7.5a.75.75 0 0 1 .75-.75h19.5a.75.75 0 0 1 .75.75v7.5l.75-.75zm0 1.5a.75.75 0 0 0 .75-.75v-7.5a2.25 2.25 0 0 0-2.25-2.25H2.25A2.25 2.25 0 0 0 0 15.75v7.5c0 .414.336.75.75.75h22.5zM4.376 5.017a9.42 9.42 0 0 1 3.12-.517 9.428 9.428 0 0 1 3.133.519.75.75 0 0 0 .49-1.418A10.917 10.917 0 0 0 7.498 3a10.91 10.91 0 0 0-3.611.6.75.75 0 0 0 .49 1.417zM15.75 14.27a3.001 3.001 0 0 1 6 .16.75.75 0 1 0 1.5.04 4.501 4.501 0 1 0-9-.24.75.75 0 1 0 1.5.04zm3.75-3.77V8.25a.75.75 0 0 0-1.5 0v2.25a.75.75 0 0 0 1.5 0zM17.25 9h3a.75.75 0 0 0 0-1.5h-3a.75.75 0 0 0 0 1.5z"></path></svg>
+              <p class="lng-24_hour_front_desk">Цілодобова стійка реєстрації гостей
+              </p>
+            </div>
+            <div class="popup-list__strict">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.868 3.379a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0zm1.5 0a3.375 3.375 0 1 0-6.75 0 3.375 3.375 0 0 0 6.75 0zm-4.125 13.875v4.5a.75.75 0 0 0 1.5 0v-4.5a.75.75 0 0 0-1.5 0zm9.505-10.122a2.25 2.25 0 0 0-3.12.624 1.15 1.15 0 0 1-1.364.442 12.11 12.11 0 0 0-8.516 0 1.15 1.15 0 0 1-1.37-.44 2.252 2.252 0 1 0-3.75 2.494 5.642 5.642 0 0 0 6.62 2.19l-1.004-.706v10.018a2.25 2.25 0 0 0 4.5 0h-1.5a2.25 2.25 0 0 0 4.5 0l.006-10.024H15l-.255.705a5.636 5.636 0 0 0 6.628-2.185 2.25 2.25 0 0 0-.625-3.118zm-.832 1.248a.75.75 0 0 1 .208 1.04 4.137 4.137 0 0 1-4.87 1.605.75.75 0 0 0-1.004.705l-.006 10.024a.75.75 0 1 1-1.5 0c0-1-1.5-1-1.5 0a.75.75 0 0 1-1.5 0V11.736a.75.75 0 0 0-1.005-.705 4.143 4.143 0 0 1-4.86-1.61.752.752 0 1 1 1.25-.833A2.65 2.65 0 0 0 8.279 9.6a10.608 10.608 0 0 1 7.457.001 2.65 2.65 0 0 0 3.141-1.015.75.75 0 0 1 1.039-.207zM18 5.254a2.25 2.25 0 0 1 4.5 0l.75-.75h-6l.75.75zm-1.5 0c0 .414.336.75.75.75h6a.75.75 0 0 0 .75-.75 3.75 3.75 0 1 0-7.5 0zm4.5-3v-1.5a.75.75 0 0 0-1.5 0v1.5a.75.75 0 0 0 1.5 0zm-19.5 3a2.25 2.25 0 0 1 4.5 0l.75-.75h-6l.75.75zm-1.5 0c0 .414.336.75.75.75h6a.75.75 0 0 0 .75-.75 3.75 3.75 0 1 0-7.5 0zm4.5-3v-1.5a.75.75 0 0 0-1.5 0v1.5a.75.75 0 0 0 1.5 0z"></path></svg>
+              <p class="lng-room_service">Обслуговування номерів
+              </p>
+            </div>
+            <div class="popup-list__strict">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.252 24h6a.75.75 0 0 0 0-1.5h-6a.75.75 0 0 0 0 1.5zm3.75-.75v-9a.75.75 0 0 0-1.5 0v9a.75.75 0 0 0 1.5 0zm7.5-16.19a1.5 1.5 0 0 0-1.06-2.56H4.062a1.5 1.5 0 0 0-1.06 2.56l7.72 7.72a.75.75 0 0 0 1.06 0l7.72-7.72zM18.44 6l-7.72 7.72h1.061L4.062 6h14.379zM.752 1.5h2.822a.75.75 0 0 1 .671.415l1.836 3.67a.75.75 0 1 0 1.342-.67L5.587 1.244A2.25 2.25 0 0 0 3.574 0H.752a.75.75 0 1 0 0 1.5zm15.81 3.603a2.997 2.997 0 1 1 1.511 2.038.75.75 0 0 0-.713 1.319 4.497 4.497 0 1 0-2.268-3.06.75.75 0 1 0 1.47-.297z"></path></svg>
+              <p class="lng-bar">Бар</p>
+            </div>
+            <div class="popup-list__strict">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.35.22a3.75 3.75 0 0 0 0 5.303 2.25 2.25 0 0 1 0 3.182.75.75 0 0 0 1.06 1.06 3.75 3.75 0 0 0 0-5.302 2.25 2.25 0 0 1 0-3.183A.75.75 0 0 0 9.35.22zm4.007 0a3.75 3.75 0 0 0 0 5.303 2.25 2.25 0 0 1 0 3.182.75.75 0 1 0 1.06 1.06 3.75 3.75 0 0 0 0-5.302 2.25 2.25 0 0 1 0-3.183.75.75 0 0 0-1.06-1.06zm4.007 0a3.75 3.75 0 0 0 0 5.303 2.25 2.25 0 0 1 0 3.182.75.75 0 1 0 1.06 1.06 3.75 3.75 0 0 0 0-5.302 2.25 2.25 0 0 1 0-3.183.75.75 0 0 0-1.06-1.06zM19.5 18.75v-6a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 1.5 0zm-6 0v-6a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 1.5 0zm3 0v-6a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 1.5 0zm-6 0v-6a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 1.5 0zM4.125 9a.375.375 0 1 1 .75 0 .375.375 0 0 1-.75 0 .75.75 0 0 0 1.5 0 1.125 1.125 0 1 0-2.25 0 1.125 1.125 0 0 0 2.25 0 .75.75 0 0 0-1.5 0zm0 4.5a.375.375 0 1 1 .75 0 .375.375 0 0 1-.75 0 .75.75 0 0 0 1.5 0 1.125 1.125 0 1 0-2.25 0 1.125 1.125 0 0 0 2.25 0 .75.75 0 0 0-1.5 0zM3 21.75v1.5a.75.75 0 0 0 1.5 0v-1.5a.75.75 0 0 0-1.5 0zm16.5 0v1.5a.75.75 0 0 0 1.5 0v-1.5a.75.75 0 0 0-1.5 0zM5.25 4.5h-3A2.25 2.25 0 0 0 0 6.75v13.5a2.25 2.25 0 0 0 2.25 2.25h19.5A2.25 2.25 0 0 0 24 20.25V6.75a2.25 2.25 0 0 0-2.25-2.25.75.75 0 0 0 0 1.5.75.75 0 0 1 .75.75v13.5a.75.75 0 0 1-.75.75H2.25a.75.75 0 0 1-.75-.75V6.75A.75.75 0 0 1 2.25 6h3a.75.75 0 0 0 0-1.5z"></path></svg>
+              <p class="lng-heating">Опалення</p>
+            </div>
+            <div class="popup-list__strict">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.75 24h22.5a.75.75 0 0 0 0-1.5H.75a.75.75 0 0 0 0 1.5zM24 2.25A2.25 2.25 0 0 0 21.75 0H4.5a2.25 2.25 0 0 0-2.25 2.25v6A2.25 2.25 0 0 0 4.5 10.5H12a.75.75 0 0 1 .75.75v12c0 .414.336.75.75.75h9.75a.75.75 0 0 0 .75-.75v-21zm-1.5 0v21l.75-.75H13.5l.75.75v-12A2.25 2.25 0 0 0 12 9H4.5a.75.75 0 0 1-.75-.75v-6a.75.75 0 0 1 .75-.75h17.25a.75.75 0 0 1 .75.75zM18.75 24h4.5a.75.75 0 0 0 .75-.75v-10.5a.75.75 0 0 0-.75-.75h-3A2.25 2.25 0 0 0 18 14.25v9c0 .414.336.75.75.75zm0-1.5l.75.75v-9a.75.75 0 0 1 .75-.75h3l-.75-.75v10.5l.75-.75h-4.5zM6 9.75v3a.75.75 0 0 0 1.5 0v-3a.75.75 0 0 0-1.5 0zm2.25-4.5a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm1.5 0a2.25 2.25 0 1 0-4.5 0 2.25 2.25 0 0 0 4.5 0zm13.5-.75h-4.5a.75.75 0 0 0 0 1.5h4.5a.75.75 0 0 0 0-1.5zm0 3h-4.5a.75.75 0 0 0 0 1.5h4.5a.75.75 0 0 0 0-1.5zM2.344 18c0 .866.012 1.295.069 1.833C2.69 22.437 4.003 24 6.844 24c2.234 0 3.38-1.189 3.977-3.297.057-.203.11-.411.168-.66l.136-.599c.029-.126.054-.228.077-.32a1.5 1.5 0 0 0-1.454-1.874H3.094a.75.75 0 0 0-.75.75zm1.5 0l-.75.75h6.655c-.027.107-.054.22-.086.357l-.135.595c-.053.229-.1.415-.15.592-.434 1.53-1.085 2.206-2.534 2.206-1.97 0-2.736-.912-2.94-2.825-.05-.47-.06-.861-.06-1.675zm-.75-.75a3 3 0 0 0-3 3 .75.75 0 0 0 1.5 0 1.5 1.5 0 0 1 1.5-1.5.75.75 0 0 0 0-1.5z"></path></svg>
+              <p class="lng-coffee_tea_maker">Чайо-/кавоварка у всіх номерах</p>
+            </div>
+          </div>
+          <div class="popup-list__column__main__first">
+            <div class="popup-list__column popup-list__block1">
+              <!-- ======================== -->
+              <div class="popup-list__strict">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.75 15h10.5l-.74-.873-.664 3.986a5.25 5.25 0 0 1-5.179 4.387H7.333a5.25 5.25 0 0 1-5.18-4.387l-.663-3.986L.75 15h4.5a.75.75 0 0 0 0-1.5H.75a.75.75 0 0 0-.74.873l.664 3.986A6.75 6.75 0 0 0 7.334 24h9.333a6.75 6.75 0 0 0 6.659-5.64l.664-3.987a.75.75 0 0 0-.74-.873h-10.5a.75.75 0 0 0 0 1.5zM12 19.5H6v-5.25a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 .75.75v5.25zm0 1.5a1.5 1.5 0 0 0 1.5-1.5v-5.25A2.25 2.25 0 0 0 11.25 12h-4.5a2.25 2.25 0 0 0-2.25 2.25v5.25A1.5 1.5 0 0 0 6 21h6zm4.5-17.25a2.25 2.25 0 0 1 4.5 0v10.5a.75.75 0 0 0 1.5 0V3.75a3.75 3.75 0 1 0-7.5 0 .75.75 0 0 0 1.5 0zm-3 3a2.25 2.25 0 0 1 4.5 0l.75-.75h-6l.75.75zm-1.5 0c0 .414.336.75.75.75h6a.75.75 0 0 0 .75-.75 3.75 3.75 0 1 0-7.5 0z"></path></svg>
+                <h2 class="lng-bathroom">Ванна кімната</h2>
+
+              </div>
+              <div class="popup-list__strict">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                <p class="lng-toilet_paper">Туалетний папір</p>
+              </div>
+              <div class="popup-list__strict">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                <p class="lng-towels">Рушники</p>
+              </div>
+              <div class="popup-list__strict">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                <p class="lng-bath_or_shower">Ванна або душ</p>
+              </div>
+              <div class="popup-list__strict">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                <p class="lng-slippers">Капці</p>
+              </div>
+              <div class="popup-list__strict">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                <p class="lng-private_bathroom">Власна ванна кімната</p>
+              </div>
+              <div class="popup-list__strict">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                <p class="lng-toilet">Туалет</p>
+              </div>
+              <div class="popup-list__strict">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                <p class="lng-toiletries">Туалетно-косметичні засоби</p>
+              </div>
+              <div class="popup-list__strict">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                <p class="lng-hair_dryer">Фен</p>
+              </div>
+              <div class="popup-list__strict">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                <p class="lng-shower">Душ</p>
+              </div>
+              <!-- ============================ -->
+              <div class="popup-list__column">
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.75 12h18.5c.69 0 1.25.56 1.25 1.25V18l.75-.75H.75l.75.75v-4.75c0-.69.56-1.25 1.25-1.25zm0-1.5A2.75 2.75 0 0 0 0 13.25V18c0 .414.336.75.75.75h22.5A.75.75 0 0 0 24 18v-4.75a2.75 2.75 0 0 0-2.75-2.75H2.75zM0 18v3a.75.75 0 0 0 1.5 0v-3A.75.75 0 0 0 0 18zm22.5 0v3a.75.75 0 0 0 1.5 0v-3a.75.75 0 0 0-1.5 0zm-.75-6.75V4.5a2.25 2.25 0 0 0-2.25-2.25h-15A2.25 2.25 0 0 0 2.25 4.5v6.75a.75.75 0 0 0 1.5 0V4.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 .75.75v6.75a.75.75 0 0 0 1.5 0zm-13.25-3h7a.25.25 0 0 1 .25.25v2.75l.75-.75h-9l.75.75V8.5a.25.25 0 0 1 .25-.25zm0-1.5A1.75 1.75 0 0 0 6.75 8.5v2.75c0 .414.336.75.75.75h9a.75.75 0 0 0 .75-.75V8.5a1.75 1.75 0 0 0-1.75-1.75h-7z"></path></svg>
+                  <h2 class="lng-bedroom">Спальня</h2>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-linen">Білизна</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-wardrobe">Шафа або гардероб</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-alarm_clock">Будильник</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-clothes_rack">Гардеробна</p>
+                </div>
+              </div>
+              <div class="popup-list__column">
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M-.002 15.75v7.5a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-1.5 0zm11.25 0v7.5a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-1.5 0zm11.25 0v7.5a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-1.5 0zm.75 1.5H.748a.75.75 0 0 0 0 1.5h22.5a.75.75 0 0 0 0-1.5zm0 3H.748a.75.75 0 0 0 0 1.5h22.5a.75.75 0 0 0 0-1.5zM1.914 13.374l6.75-4.5h-.832l6.75 4.5a.75.75 0 1 0 .832-1.248l-6.75-4.5a.75.75 0 0 0-.832 0l-6.75 4.5a.75.75 0 1 0 .832 1.248zM14.998 3a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0zm-4.084 8.374l6-4h-.832l5.252 3.501a.75.75 0 0 0 .832-1.248l-5.252-3.501a.75.75 0 0 0-.832 0l-6 4a.75.75 0 1 0 .832 1.248z"></path></svg>
+                  <h2 class="lng-view">Вид</h2>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-view__city">Вид на місто</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-monument">Вид на пам'ятку</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-view">Вид</p>
+                </div>
+              </div>
+              <div class="popup-list__column">
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.25 2.25h19.5L21 1.5v21l.75-.75H2.25l.75.75v-21l-.75.75zm0-1.5a.75.75 0 0 0-.75.75v21c0 .414.336.75.75.75h19.5a.75.75 0 0 0 .75-.75v-21a.75.75 0 0 0-.75-.75H2.25zm-1.5 1.5h22.5a.75.75 0 0 0 0-1.5H.75a.75.75 0 0 0 0 1.5zm0 21h22.5a.75.75 0 0 0 0-1.5H.75a.75.75 0 0 0 0 1.5zM18 15v3.539a.211.211 0 0 1-.211.211H6.211A.211.211 0 0 1 6 18.539v-7.078c0-.117.094-.211.211-.211h11.578c.116 0 .211.095.211.211V15zm1.5 0v-3.539a1.71 1.71 0 0 0-1.711-1.711H6.211c-.945 0-1.711.766-1.711 1.711v7.078c0 .945.766 1.711 1.711 1.711h11.578a1.71 1.71 0 0 0 1.711-1.711V15zM9 14.25h6a.75.75 0 0 0 0-1.5H9a.75.75 0 0 0 0 1.5zM5.25 4.875a.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5 1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25.75.75 0 0 0 0 1.5zm3 0a.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5 1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25.75.75 0 0 0 0 1.5zm-6 3.375h19.5a.75.75 0 0 0 0-1.5H2.25a.75.75 0 0 0 0 1.5zm11.25-3h5.25a.75.75 0 0 0 0-1.5H13.5a.75.75 0 0 0 0 1.5z"></path></svg>
+                  <h2 class="lng-kitchen">Кухня</h2>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-dining_table">Обідній стіл</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-cleaning_supplies">Засоби для чищення</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-electric_kettle">Електрочайник</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-fridge">Холодильник</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-electric_cooker">Електрична плита</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-microwave">Мікрохвильова піч</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-cooking_appliances">Прибори для приготування їжі</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-tableware">Столовий посуд</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-cutlery">Столові прибори</p>
+                </div>
+              </div>
+              <div class="popup-list__column">
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 16.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0zM12 15h8.5c.69 0 1.25.56 1.25 1.25v2.5l.75-.75H12l.75.75v-4.5L12 15zm0-1.5a.75.75 0 0 0-.75.75v4.5c0 .414.336.75.75.75h10.5a.75.75 0 0 0 .75-.75v-2.5a2.75 2.75 0 0 0-2.75-2.75H12zm-10.5 6h21l-.75-.75v3l.75-.75h-21l.75.75v-3l-.75.75zm0-1.5a.75.75 0 0 0-.75.75v3c0 .414.336.75.75.75h21a.75.75 0 0 0 .75-.75v-3a.75.75 0 0 0-.75-.75h-21zm.75 5.25v-9a.75.75 0 0 0-1.5 0v9a.75.75 0 0 0 1.5 0zm21 0v-1.5a.75.75 0 0 0-1.5 0v1.5a.75.75 0 0 0 1.5 0zM19.4 6.001L19.403 6H15.1v.001l.562-4.5V1.5h3.176L19.4 6zm1.49-.187l-.564-4.5A1.5 1.5 0 0 0 18.838 0h-3.176a1.5 1.5 0 0 0-1.488 1.314l-.563 4.5A1.499 1.499 0 0 0 15.102 7.5H19.4a1.499 1.499 0 0 0 1.49-1.687zm-4.39.936v4.5a.75.75 0 0 0 1.5 0v-4.5a.75.75 0 0 0-1.5 0z"></path></svg>
+                  <h2 class="lng-room__amenities">Зручності в номері</h2>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-outlet__near__bed">Розетка поблизу з ліжком</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-clothes__hanger">Вішалка для одягу</p>
+                </div>
+              </div>
+              <div class="popup-list__column">
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 11.019V.75l-1.085.67L9.13 3.53a.236.236 0 0 1-.001-.422l-1.965.982a.75.75 0 0 0 .67 1.342l1.966-.983a1.264 1.264 0 0 0 .001-2.26L5.585.079A.75.75 0 0 0 4.5.75v10.269a.75.75 0 0 0 1.5 0zm16.506-5.116l-2.165 16.6h-2.716a1.125 1.125 0 0 1 0-2.25c.535 0 1.051.201 1.445.564l1.623 1.487a.75.75 0 1 0 1.014-1.106l-1.622-1.486a3.632 3.632 0 0 0-2.46-.959 2.625 2.625 0 0 0 0 5.25h2.717a1.5 1.5 0 0 0 1.487-1.306l2.165-16.6a.75.75 0 1 0-1.488-.194zM12 21a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm1.5 0A2.25 2.25 0 1 0 9 21a2.25 2.25 0 0 0 4.5 0zM8.204 9.022c3.054.187 5.296 1.57 5.296 2.978 0 1.538-2.631 3-6 3s-6-1.462-6-3c.055-.68.475-1.34 1.12-1.704a.75.75 0 0 0-.74-1.306 3.721 3.721 0 0 0-1.878 2.952C0 14.604 3.412 16.5 7.5 16.5c4.087 0 7.5-1.896 7.5-4.5 0-2.42-2.96-4.246-6.704-4.476a.75.75 0 1 0-.092 1.498z"></path></svg>
+                  <h2 class="lng-sports__and__recreation">Спорт і відпочинок
+                  </h2>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-children__playground">Дитячий майданчик</p>
+                </div>
+              </div>
+              <div class="popup-list__column">
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.75 8.625a2.25 2.25 0 0 0-2.25 2.25v1.5h-15v-1.5a2.25 2.25 0 0 0-4.5 0v3a3.75 3.75 0 0 0 3.75 3.75h16.5a3.75 3.75 0 0 0 3.75-3.75v-3a2.25 2.25 0 0 0-2.25-2.25zm0 1.5a.75.75 0 0 1 .75.75v3a2.25 2.25 0 0 1-2.25 2.25H3.75a2.25 2.25 0 0 1-2.25-2.25v-3a.75.75 0 0 1 1.5 0v1.5a1.5 1.5 0 0 0 1.5 1.5h15a1.5 1.5 0 0 0 1.5-1.5v-1.5a.75.75 0 0 1 .75-.75zM3 16.875v2.25a.75.75 0 0 0 1.5 0v-2.25a.75.75 0 0 0-1.5 0zm16.5 0v2.25a.75.75 0 0 0 1.5 0v-2.25a.75.75 0 0 0-1.5 0zM3 9.375a3.75 3.75 0 0 1 3.75-3.75h10.5A3.75 3.75 0 0 1 21 9.375a.75.75 0 0 0 1.5 0c0-2.9-2.35-5.25-5.25-5.25H6.75a5.25 5.25 0 0 0-5.25 5.25.75.75 0 0 0 1.5 0zm9.75 3.75v-8.25a.75.75 0 0 0-1.5 0v8.25a.75.75 0 0 0 1.5 0z"></path></svg>
+                  <h2 class="lng-living__room">Вітальня
+                  </h2>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-work__desk">Робочий стіл</p>
+                </div>
+              </div>
+              <div class="popup-list__column">
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.5 10.375v6.5a.25.25 0 0 1-.25.25H1.75a.25.25 0 0 1-.25-.25v-13a.25.25 0 0 1 .25-.25h20.5a.25.25 0 0 1 .25.25v6.5zm1.5 0v-6.5a1.75 1.75 0 0 0-1.75-1.75H1.75A1.75 1.75 0 0 0 0 3.875v13c0 .966.784 1.75 1.75 1.75h20.5a1.75 1.75 0 0 0 1.75-1.75v-6.5zm-16.5 12h9a.75.75 0 0 0 0-1.5h-9a.75.75 0 0 0 0 1.5zm3.75-4.5v3.75a.75.75 0 0 0 1.5 0v-3.75a.75.75 0 0 0-1.5 0z"></path></svg>
+                  <h2 class="lng-media_technology">Медіа та технології
+                  </h2>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-tv">Телевізор з плоским екраном</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-television">Телевізор</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-pay_per_view_channels">Канали з платою за перегляд</p>
+                </div>
+              </div>
+            </div>
+            <div class="popup-list__column popup-list__block2">
+              <div class="popup-list__column">
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.999.75v22.5a.75.75 0 0 0 1.5 0V.75a.75.75 0 0 0-1.5 0zm3 0V7.5a2.259 2.259 0 0 1-2.252 2.25 2.258 2.258 0 0 1-2.248-2.252V.75a.75.75 0 0 0-1.5 0V7.5a3.76 3.76 0 0 0 3.748 3.75 3.76 3.76 0 0 0 3.752-3.748V.75a.75.75 0 0 0-1.5 0zm6.75 15.75h3c1.183.046 2.203-.9 2.25-2.111a2.22 2.22 0 0 0 0-.168c-.25-6.672-.828-9.78-3.231-13.533a1.508 1.508 0 0 0-2.77.81V23.25a.75.75 0 0 0 1.5 0V1.503c0 .003.001 0 .003 0a.006.006 0 0 1 .008.002c2.21 3.45 2.75 6.354 2.99 12.773v.053a.696.696 0 0 1-.721.67L15.749 15a.75.75 0 0 0 0 1.5z"></path></svg>
+                  <h2 class="lng-food_and_drinks">Їжа і напої
+                  </h2>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-cafe">Кав'ярня (на території)</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-fruit">Фрукти
+                    (Оплачується окремо)</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-wine">Вино/шампанське
+                    (Оплачується окремо)
+                    </p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-snack_bar">Снек-бар
+                    </p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-room_service_breakfast">Сніданок у номері
+                    </p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-bar">Бар
+                    </p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-mini__bar">Міні-бар
+                    </p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-kettle_coffee_maker">Чайник/кавоварка
+                    </p>
+                </div>
+              </div>
+              <div class="popup-list__column">
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.25 18.75a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0zm1.5 0a3.75 3.75 0 1 0-7.5 0 3.75 3.75 0 0 0 7.5 0zm2.08-5.833a8.25 8.25 0 0 0-11.666 0 .75.75 0 0 0 1.06 1.06 6.75 6.75 0 0 1 9.546 0 .75.75 0 0 0 1.06-1.06zm3.185-3.182c-4.979-4.98-13.051-4.98-18.03 0a.75.75 0 1 0 1.06 1.06c4.394-4.393 11.516-4.393 15.91 0a.75.75 0 1 0 1.06-1.06zm2.746-3.603C17.136-.043 6.864-.043.24 6.132A.75.75 0 1 0 1.26 7.23c6.05-5.638 15.429-5.638 21.478 0a.75.75 0 0 0 1.022-1.098z"></path></svg>
+                  <h2 class="lng-Internet">Інтернет
+                  </h2>
+                </div>
+                <div class="popup-list__strict">
+                  <p class="lng-wifi__text">Бездротовий доступ до Інтернету надається на всій території готелю безкоштовно.
+                  </p>
+                </div>
+                
+              </div>
+              <div class="popup-list__column">
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.5 12c0 5.799-4.701 10.5-10.5 10.5S1.5 17.799 1.5 12 6.201 1.5 12 1.5 22.5 6.201 22.5 12zm1.5 0c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12zm-9.75-1.5a1.5 1.5 0 0 1-1.5 1.5H10.5l.75.75v-4.5L10.5 9h2.25a1.5 1.5 0 0 1 1.5 1.5zm1.5 0a3 3 0 0 0-3-3H10.5a.75.75 0 0 0-.75.75v4.5c0 .414.336.75.75.75h2.25a3 3 0 0 0 3-3zm-4.5 6.75v-4.5a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0z"></path></svg>
+                  <h2 class="lng-parking">Парковка
+                  </h2>
+                </div>
+                <div class="popup-list__strict">
+                  <p class="lng-parking__text">Громадська автостоянка доступна поблизу готелю (попереднє резервування місця не потрібне) і коштує UAH 200 за день.
+                  </p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-garage">Паркування в гаражі</p>
+                </div>
+              </div>
+              <div class="popup-list__column">
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.244 14.156a6.75 6.75 0 0 0-6.75-5.906A6.747 6.747 0 0 0 .73 14.397a.75.75 0 0 0 1.494.134 5.25 5.25 0 0 1 5.27-4.781 5.253 5.253 0 0 1 5.262 4.594.75.75 0 1 0 1.488-.188zM10.125 4.125a2.625 2.625 0 1 1-5.25 0V1.5h5.25v2.625zm1.5 0V1.5a1.5 1.5 0 0 0-1.5-1.5h-5.25a1.5 1.5 0 0 0-1.5 1.5v2.625a4.125 4.125 0 0 0 8.25 0zM23.25 22.5H.75l.75.75v-7.5a.75.75 0 0 1 .75-.75h19.5a.75.75 0 0 1 .75.75v7.5l.75-.75zm0 1.5a.75.75 0 0 0 .75-.75v-7.5a2.25 2.25 0 0 0-2.25-2.25H2.25A2.25 2.25 0 0 0 0 15.75v7.5c0 .414.336.75.75.75h22.5zM4.376 5.017a9.42 9.42 0 0 1 3.12-.517 9.428 9.428 0 0 1 3.133.519.75.75 0 0 0 .49-1.418A10.917 10.917 0 0 0 7.498 3a10.91 10.91 0 0 0-3.611.6.75.75 0 0 0 .49 1.417zM15.75 14.27a3.001 3.001 0 0 1 6 .16.75.75 0 1 0 1.5.04 4.501 4.501 0 1 0-9-.24.75.75 0 1 0 1.5.04zm3.75-3.77V8.25a.75.75 0 0 0-1.5 0v2.25a.75.75 0 0 0 1.5 0zM17.25 9h3a.75.75 0 0 0 0-1.5h-3a.75.75 0 0 0 0 1.5z"></path></svg>
+                  <h2 class="lng-reception">Стійка реєстрації
+                  </h2>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-bill">Надається рахунок</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-individual_registration">Індивідуальна реєстрація заїзду/виїзду</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-concierge">Послуги консьєржа
+                    </p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-atm">Банкомат на території готелю
+                    </p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-luggage_storage">Камера зберігання багажу
+                    </p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-tour_desk">Туристичне бюро
+                    </p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-currency_exchange">Пунтк обміну валют
+                    </p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-express_checkin_checkout">Експрес-реєстрація заїзду/виїзду
+                    </p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-24hr_reception">Цілодобова стійка реєстрації гостей
+                    </p>
+                </div>
+              </div>
+              <div class="popup-list__column">
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.75 5.25a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0zm1.5 0a3.75 3.75 0 1 0-7.5 0 3.75 3.75 0 0 0 7.5 0zm-6.182 15.093l.188 1.5A.75.75 0 0 0 18 22.5h3a.75.75 0 0 0 .744-.657l.75-6-.744.657h1.5a.75.75 0 0 0 .75-.75V13.5a4.5 4.5 0 0 0-7.2-3.6.75.75 0 1 0 .9 1.2 3 3 0 0 1 4.8 2.4v2.25l.75-.75h-1.5a.75.75 0 0 0-.744.657l-.75 6L21 21h-3l.744.657-.188-1.5a.75.75 0 0 0-1.488.186zM6.75 5.25a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0zm1.5 0a3.75 3.75 0 1 0-7.5 0 3.75 3.75 0 0 0 7.5 0zM5.444 20.157l-.188 1.5L6 21H3l.744.657-.75-6A.75.75 0 0 0 2.25 15H.75l.75.75V13.5a3 3 0 0 1 4.8-2.4.75.75 0 1 0 .9-1.2A4.5 4.5 0 0 0 0 13.5v2.25c0 .414.336.75.75.75h1.5l-.744-.657.75 6A.75.75 0 0 0 3 22.5h3a.75.75 0 0 0 .744-.657l.188-1.5a.75.75 0 0 0-1.488-.186zM13.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM15 9a3 3 0 1 0-6 0 3 3 0 0 0 6 0zm-3 3a4.5 4.5 0 0 0-4.5 4.5v.75c0 .414.336.75.75.75h1.5l-.74-.627.75 4.5a.75.75 0 0 0 .74.627H12a.75.75 0 0 0 0-1.5h-1.5l.74.627-.75-4.5a.75.75 0 0 0-.74-.627h-1.5l.75.75v-.75a3 3 0 0 1 3-3 .75.75 0 0 0 0-1.5zm0 1.5a3 3 0 0 1 3 3v.75l.75-.75h-1.5a.75.75 0 0 0-.74.627l-.75 4.5.74-.627H12a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 .74-.627l.75-4.5-.74.627h1.5a.75.75 0 0 0 .75-.75v-.75A4.5 4.5 0 0 0 12 12a.75.75 0 0 0 0 1.5z"></path></svg>
+                  <h2 class="lng-entertainment__family">Розваги та сімейні послуги</h2>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-outdoor_games_equipment">Устаткування для ігор на вулиці
+                  </p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-board_games_puzzles">Настільні ігри / пазли</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-children_books_music_movies">Дитячі книги, музика чи фільми
+                    </p>
+                </div>
+              </div>
+              <div class="popup-list__column">
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.75 5.25a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0zm1.5 0a3.75 3.75 0 1 0-7.5 0 3.75 3.75 0 0 0 7.5 0zm-6.182 15.093l.188 1.5A.75.75 0 0 0 18 22.5h3a.75.75 0 0 0 .744-.657l.75-6-.744.657h1.5a.75.75 0 0 0 .75-.75V13.5a4.5 4.5 0 0 0-7.2-3.6.75.75 0 1 0 .9 1.2 3 3 0 0 1 4.8 2.4v2.25l.75-.75h-1.5a.75.75 0 0 0-.744.657l-.75 6L21 21h-3l.744.657-.188-1.5a.75.75 0 0 0-1.488.186zM6.75 5.25a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0zm1.5 0a3.75 3.75 0 1 0-7.5 0 3.75 3.75 0 0 0 7.5 0zM5.444 20.157l-.188 1.5L6 21H3l.744.657-.75-6A.75.75 0 0 0 2.25 15H.75l.75.75V13.5a3 3 0 0 1 4.8-2.4.75.75 0 1 0 .9-1.2A4.5 4.5 0 0 0 0 13.5v2.25c0 .414.336.75.75.75h1.5l-.744-.657.75 6A.75.75 0 0 0 3 22.5h3a.75.75 0 0 0 .744-.657l.188-1.5a.75.75 0 0 0-1.488-.186zM13.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM15 9a3 3 0 1 0-6 0 3 3 0 0 0 6 0zm-3 3a4.5 4.5 0 0 0-4.5 4.5v.75c0 .414.336.75.75.75h1.5l-.74-.627.75 4.5a.75.75 0 0 0 .74.627H12a.75.75 0 0 0 0-1.5h-1.5l.74.627-.75-4.5a.75.75 0 0 0-.74-.627h-1.5l.75.75v-.75a3 3 0 0 1 3-3 .75.75 0 0 0 0-1.5zm0 1.5a3 3 0 0 1 3 3v.75l.75-.75h-1.5a.75.75 0 0 0-.74.627l-.75 4.5.74-.627H12a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 .74-.627l.75-4.5-.74.627h1.5a.75.75 0 0 0 .75-.75v-.75A4.5 4.5 0 0 0 12 12a.75.75 0 0 0 0 1.5z"></path></svg>
+                  <h2 class="lng-clean">Послуги прибирання
+                  </h2>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-daily_housekeeping">Щоденне прибирання
+                  </p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-ironing_service">Прасування одягу
+                    (Оплачується окремо)</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-dry_cleaning">Хімчистка
+                    (Оплачується окремо)
+                    </p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-laundry">Пральня
+                    (Оплачується окремо)
+                    </p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="popup-list__column popup-list__block3">
+              <div class="popup-list__column">
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.75 12.75H1.728a.228.228 0 0 1-.228-.228V6.456c0-.666.54-1.206 1.206-1.206h18.587c.666 0 1.207.54 1.207 1.206v6.066a.228.228 0 0 1-.228.228H14.25a.75.75 0 0 0 0 1.5h8.022c.954 0 1.728-.774 1.728-1.728V6.456a2.707 2.707 0 0 0-2.707-2.706H2.706A2.706 2.706 0 0 0 0 6.456v6.066c0 .954.774 1.728 1.728 1.728H9.75a.75.75 0 0 0 0-1.5zm6.75-9h-9l.75.75v-.938c.04-1.166 1.036-2.1 2.227-2.062H13.5a2.166 2.166 0 0 1 2.25 2.087V4.5l.75-.75zm0 1.5a.75.75 0 0 0 .75-.75v-.938A3.665 3.665 0 0 0 13.476 0H10.5C8.506-.062 6.818 1.52 6.75 3.537V4.5c0 .414.336.75.75.75h9zm-6 4.5a1.5 1.5 0 0 0-1.5 1.5v2.25a3 3 0 1 0 6 0v-2.25a1.5 1.5 0 0 0-1.5-1.5h-3zm0 1.5h3v2.25a1.5 1.5 0 0 1-3 0v-2.25zm10.509 2.364l1.234 8.022a.75.75 0 0 1-.742.864H2.5a.75.75 0 0 1-.74-.864l1.231-8.022a.75.75 0 1 0-1.482-.228L.277 21.408A2.248 2.248 0 0 0 2.5 24h19a2.25 2.25 0 0 0 2.225-2.592l-1.234-8.022a.75.75 0 0 0-1.482.228z"></path></svg>
+                  <h2 class="lng-bussines__centr">Послуги бізнес-центра
+                  </h2>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-fax">Факс/ксерокопіювання
+                    (Оплачується окремо)</p>
+                </div>
+              </div>
+              <div class="popup-list__column">
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 16.5v5.25a.75.75 0 0 1-.75.75H5.25a.75.75 0 0 1-.75-.75v-10.5a.75.75 0 0 1 .75-.75h13.5a.75.75 0 0 1 .75.75v5.25zm1.5 0v-5.25A2.25 2.25 0 0 0 18.75 9H5.25A2.25 2.25 0 0 0 3 11.25v10.5A2.25 2.25 0 0 0 5.25 24h13.5A2.25 2.25 0 0 0 21 21.75V16.5zM7.5 9.75V6a4.5 4.5 0 0 1 9 0v3.75a.75.75 0 0 0 1.5 0V6A6 6 0 0 0 6 6v3.75a.75.75 0 0 0 1.5 0zM12 15a1.125 1.125 0 1 0 .004 0h-.006a.75.75 0 0 0 .004 1.5H12a.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5z"></path></svg>
+                  <h2 class="lng-security">Безпека
+                  </h2>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-fire_extinguishers">Вогнегасники</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-external_cctv">Відеоспостереження ззовні будівлі</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-public_area_cctv">Відеоспостереження в зонах загального користування</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-smoke_detectors">Датчики диму</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-security_alarm">Охоронна сигналізація</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-card_access">Вхід з електронною карткою</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-key_access">Вхід з ключем</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-24_7_security">Цілодобова охорона</p>
+                </div>
+              </div>
+              <div class="popup-list__column">
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.25 15.75h-.75a.75.75 0 0 1-.75-.75v-3.75a1.5 1.5 0 0 0-1.5-1.5h-.75a.75.75 0 0 0 0 1.5h.75V15a2.25 2.25 0 0 0 2.25 2.25h.75a.75.75 0 0 0 0-1.5zM11.625 6a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25.75.75 0 0 0 0 1.5.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5zM22.5 12c0 5.799-4.701 10.5-10.5 10.5S1.5 17.799 1.5 12 6.201 1.5 12 1.5 22.5 6.201 22.5 12zm1.5 0c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12z"></path></svg>
+                  <h2 class="lng-general">Загальні
+                   </h2>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-transfer">Трансфер
+                    (Оплачується окремо)</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-grocery_delivery">Доставка продуктів
+                    (Оплачується окремо)</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-allergy_friendly" >Безпечний для алергіків</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-smoking_areas">Місця для куріння</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-condition">Кондиціонер</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-no_smoking">На всій території готельного об'єкта і в номерах заборонено курити</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-heating">Опалення</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-packed_lunches">Запаковані ланчі</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-soundproof_rooms">Звуконепроникні номери</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-lift">Ліфт</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-fan">Вентилятор</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-family__rooms">Сімейні номери</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-ironing__facilities">Приладдя для прасування одягу</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-airport__shuttle ">Трансфер з/до аеропорту
+                    (Оплачується окремо)</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-non__smoking__rooms">Номери для некурців</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-iron">Праска</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-wake__up__service">Дзвінок-"будильник"/будильник</p>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p class="lng-room__service">Обслуговування номерів</p>
+                </div>
+              </div>
+              <div class="popup-list__column">
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.125 3.56a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0zm1.5 0a3.375 3.375 0 1 0-6.75 0 3.375 3.375 0 0 0 6.75 0zm3.454 18.335l-1.836-3.67a.75.75 0 0 0-.671-.415H11.25a.75.75 0 0 1-.75-.75v-7.5a.75.75 0 0 1 1.5 0v6c0 .414.336.75.75.75h3.75a.75.75 0 0 1 .671.415l2.25 4.5a.75.75 0 0 1-1.342.67zm-1.342.671a2.25 2.25 0 1 0 4.026-2.012l-2.25-4.5A2.25 2.25 0 0 0 16.5 14.81h-3.75l.75.75v-6a2.25 2.25 0 0 0-4.5 0v7.5a2.25 2.25 0 0 0 2.25 2.25h4.322l-.67-.415 1.835 3.672zm-4.362-.958a5.25 5.25 0 0 1-5.25-9.096.75.75 0 1 0-.75-1.299 6.75 6.75 0 1 0 6.75 11.694.75.75 0 1 0-.75-1.3z"></path></svg>
+                  <h2>Доступність
+                  </h2>
+                </div>
+                <div class="popup-list__strict">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                  <p>На вищі поверхи можна піднятися на ліфті</p>
+                </div>
+            </div>
+            <div class="popup-list__column">
+              <div class="popup-list__strict">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 13.5a6 6 0 0 0-6-6h-3a6 6 0 0 0 0 12h.75l-.53-.22 4.5 4.5a.75.75 0 0 0 1.28-.53v-5.024l-.43.678A5.989 5.989 0 0 0 24 13.502zm-1.5-.002a4.489 4.489 0 0 1-2.57 4.05.75.75 0 0 0-.43.678v5.024l1.28-.53-4.5-4.5a.75.75 0 0 0-.53-.22H15a4.5 4.5 0 1 1 0-9h3a4.5 4.5 0 0 1 4.5 4.5zM6.22 12.22l-3 3 1.28.53v-5.024a.75.75 0 0 0-.43-.678A4.489 4.489 0 0 1 5.998 1.5H9a4.502 4.502 0 0 1 4.313 3.214.75.75 0 0 0 1.438-.428A6.002 6.002 0 0 0 9 0H6a5.988 5.988 0 0 0-2.57 11.404L3 10.726v5.024a.75.75 0 0 0 1.28.53l3-3a.75.75 0 1 0-1.06-1.06z"></path></svg>
+                <h2>Мова спілкування
+
+                </h2>
+              </div>
+              <div class="popup-list__strict">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                <p>англійська</p>
+              </div>
+              <div class="popup-list__strict">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                <p>російська</p>
+              </div>
+              <div class="popup-list__strict">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M56.33 100a4 4 0 0 1-2.82-1.16L20.68 66.12a4 4 0 1 1 5.64-5.65l29.57 29.46 45.42-60.33a4 4 0 1 1 6.38 4.8l-48.17 64a4 4 0 0 1-2.91 1.6z"></path></svg>
+                <p>українська</p>
+              </div>
+          </div>
+         
+          
+      </div>
+    </div>   
+      <script src="js/lang.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/apartment-view.js"></script>
+
+</body>
+</html>
